@@ -139,10 +139,10 @@ class HospitalManagementSystem:
                 for patient in self.patients:
                     
                     writer.writerow([
-                        book.get_name(),
-                        book.get_patient_id(),
-                        book.get_age(),
-                        book.get_disease()
+                        patient.get_name(),
+                        patient.get_patient_id(),
+                        patient.get_age(),
+                        patient.get_disease()
                     ])
             print("Records saved Successfully!")
 
