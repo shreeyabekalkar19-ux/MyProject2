@@ -109,6 +109,8 @@ class HospitalManagementSystem:
                 patient.set_age(age)
                 patient.set_disease(disease)
 
+                self.save_records()
+
                 print("Patient Updated Successfully!")
 
             except:
@@ -205,7 +207,7 @@ class HospitalManagementSystem:
                 self.save_records()
 
             elif choice == "6":
-                self.load_records()
+                self.save_records()
                 print("Thank you!")
                 break
 
